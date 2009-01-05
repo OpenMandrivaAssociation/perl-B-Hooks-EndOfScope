@@ -1,5 +1,5 @@
 %define module   B-Hooks-EndOfScope
-%define version    0.04
+%define version    0.05
 %define release    %mkrel 1
 
 Name:       perl-%{module}
@@ -14,6 +14,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Scope::Guard)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(Variable::Magic)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
