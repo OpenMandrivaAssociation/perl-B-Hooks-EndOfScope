@@ -1,15 +1,15 @@
 %define upstream_name    B-Hooks-EndOfScope
-%define upstream_version 0.11
+%define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Execute code after a scope finished compilation
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/B/B-Hooks-EndOfScope-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Scope::Guard)
@@ -77,4 +77,5 @@ make test
 
 * Thu Oct 23 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.04-1mdv2009.1
 - initial mdv release, generated with cpan2dist
+
 
