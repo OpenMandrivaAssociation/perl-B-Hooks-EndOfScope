@@ -1,5 +1,5 @@
 %define upstream_name    B-Hooks-EndOfScope
-%define upstream_version 0.12
+%define upstream_version 0.13
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -43,3 +43,4 @@ make test
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
