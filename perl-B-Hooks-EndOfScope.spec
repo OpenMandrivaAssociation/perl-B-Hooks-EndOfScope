@@ -1,9 +1,9 @@
 %define upstream_name    B-Hooks-EndOfScope
-%define upstream_version 0.13
+%define upstream_version 0.21
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	8
+Release:	1
 
 Summary:	Execute code after a scope finished compilation
 License:	GPL+ or Artistic
@@ -43,4 +43,3 @@ make test
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
