@@ -3,12 +3,12 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:	Execute code after a scope finished compilation
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		http://metacpan.org/pod/B::Hooks::EndOfScope
 Source0:	http://www.cpan.org/modules/by-module/B/B-Hooks-EndOfScope-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(ExtUtils::MakeMaker)
