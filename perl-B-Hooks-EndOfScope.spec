@@ -8,7 +8,7 @@ Release:	3
 Summary:	Execute code after a scope finished compilation
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/B::Hooks::EndOfScope
+Url:		https://metacpan.org/pod/B::Hooks::EndOfScope
 Source0:	http://www.cpan.org/modules/by-module/B/B-Hooks-EndOfScope-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(ExtUtils::MakeMaker)
