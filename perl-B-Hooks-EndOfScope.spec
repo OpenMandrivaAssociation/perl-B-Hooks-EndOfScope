@@ -1,15 +1,14 @@
 %define upstream_name    B-Hooks-EndOfScope
-%define upstream_version 0.26
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	0.28
+Release:	1
 
 Summary:	Execute code after a scope finished compilation
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/B::Hooks::EndOfScope
-Source0:	http://www.cpan.org/modules/by-module/B/B-Hooks-EndOfScope-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/B/B-Hooks-EndOfScope-%{version}.tar.gz
 
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Sub::Exporter::Progressive)
@@ -27,17 +26,17 @@ This module allows you to execute code when perl finished compiling the
 surrounding scope.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes README
