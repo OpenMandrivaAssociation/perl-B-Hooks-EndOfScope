@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/B::Hooks::EndOfScope
 Source0:	http://www.cpan.org/modules/by-module/B/B-Hooks-EndOfScope-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Sub::Exporter::Progressive)
 BuildRequires:	perl(Module::Runtime)
